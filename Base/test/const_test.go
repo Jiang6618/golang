@@ -22,8 +22,6 @@ func TestConst(t *testing.T) {
 	var a int = 22
 	if a == c2 {
 		fmt.Println("ok")
-	} else {
-		fmt.Println("not ok")
 	}
 
 }
