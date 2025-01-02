@@ -25,6 +25,7 @@ func TestConst(t *testing.T) {
 	} else {
 		fmt.Println("not ok")
 	}
+
 }
 
 func TestIota(t *testing.T) {
