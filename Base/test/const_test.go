@@ -16,6 +16,15 @@ func TestConst(t *testing.T) {
 		c3 // 继承c2
 	)
 	fmt.Println(e, c1, c2, c3) // 2.7 string 22 22
+
+	//Go语⾔中的常量是⽆类型的，
+	//这意味着常量在赋值给变量或表达式时，会根据上下⽂的需要⾃动进⾏类型转换
+	var a int = 22
+	if a == c2 {
+		fmt.Println("ok")
+	} else {
+		fmt.Println("not ok")
+	}
 }
 
 func TestIota(t *testing.T) {
