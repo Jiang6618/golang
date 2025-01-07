@@ -81,7 +81,9 @@ func TestMap4(t *testing.T) {
 		list = append(list, key)
 	}
 
+	fmt.Println(list)
 	sort.Strings(list)
+	fmt.Println(list)
 
 	for _, val := range list {
 		fmt.Println(val, m[val])
