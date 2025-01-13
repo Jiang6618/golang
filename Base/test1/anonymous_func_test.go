@@ -14,9 +14,8 @@ func TestAFunc(t *testing.T) {
 }
 
 func TestSub(t *testing.T) {
-	var sub func(int, int) int
-
-	sub = func(a, b int) int {
+	// var sub func(int, int) int
+	sub := func(a, b int) int {
 		return a - b
 	}
 	fmt.Println(sub(25, 10))
