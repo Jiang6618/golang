@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/shirou/gopsutil/v3/host"
+)
 
 func defineVariable() {
 	// 单个声明
@@ -24,9 +28,17 @@ func defineVariable() {
 	fmt.Println(i, val, key)
 }
 
+func getSysInfo() {
+	platform, famliy, version, _ := host.PlatformInformation()
+	fmt.Printf("platform: %v\n", platform)
+	fmt.Printf("famliy: %v\n", famliy)
+	fmt.Printf("version: %v\n", version)
+}
+
 func main() {
 	fmt.Println("Hello World")
 	fmt.Print("++++++++++++++++++++++++++++++++++++\n")
 
 	defineVariable()
+	getSysInfo()
 }
