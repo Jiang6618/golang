@@ -28,7 +28,7 @@ func riskyOperation() {
 
 	fmt.Println("Executing risky operation")
 	panic("Something went wrong")
-	fmt.Println("operation completed") // This will not execute
+	// fmt.Println("operation completed") // This will not execute
 }
 
 func TestRecover1(t *testing.T) {

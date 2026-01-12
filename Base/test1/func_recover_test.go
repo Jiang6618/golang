@@ -18,5 +18,5 @@ func TestRecover(t *testing.T) {
 
 	fmt.Println("开始")
 	panic("退出")
-	fmt.Println("结束") // 不会执行
+	// fmt.Println("结束") // 不会执行
 }
